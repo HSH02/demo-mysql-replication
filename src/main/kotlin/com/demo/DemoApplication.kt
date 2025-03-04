@@ -1,11 +1,13 @@
-package com.demomysqlreplication
+package com.demo
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing
 
 @SpringBootApplication
-class DemoMysqlReplicationApplication
+@EnableJpaAuditing
+class BackApplication
 
 fun main(args: Array<String>) {
-    runApplication<DemoMysqlReplicationApplication>(*args)
+    runApplication<BackApplication>(*args)
 }
